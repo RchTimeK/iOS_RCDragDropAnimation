@@ -1,0 +1,857 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B4DF20BFCABF45BDDE7D68A /* Pods_RCDragDropAnimation_RCDragDropAnimationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD93E4D5269B23E1A4576639 /* Pods_RCDragDropAnimation_RCDragDropAnimationUITests.framework */; };
+		83C51058B0FA45DFAFE6EE2B /* Pods_RCDragDropAnimationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5BAB233390E6B4BCB3AE90 /* Pods_RCDragDropAnimationTests.framework */; };
+		878554515C2BE22E6FDE2425 /* Pods_RCDragDropAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06808114B36B66CC80564119 /* Pods_RCDragDropAnimation.framework */; };
+		A6AAB8EA2A3945D90076253A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AAB8E92A3945D90076253A /* AppDelegate.swift */; };
+		A6AAB8EE2A3945D90076253A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AAB8ED2A3945D90076253A /* ViewController.swift */; };
+		A6AAB8F12A3945D90076253A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6AAB8EF2A3945D90076253A /* Main.storyboard */; };
+		A6AAB8F32A3945DA0076253A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6AAB8F22A3945DA0076253A /* Assets.xcassets */; };
+		A6AAB8F62A3945DA0076253A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6AAB8F42A3945DA0076253A /* LaunchScreen.storyboard */; };
+		A6AAB9012A3945DA0076253A /* RCDragDropAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AAB9002A3945DA0076253A /* RCDragDropAnimationTests.swift */; };
+		A6AAB90B2A3945DA0076253A /* RCDragDropAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AAB90A2A3945DA0076253A /* RCDragDropAnimationUITests.swift */; };
+		A6AAB90D2A3945DA0076253A /* RCDragDropAnimationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AAB90C2A3945DA0076253A /* RCDragDropAnimationUITestsLaunchTests.swift */; };
+		A6AAB9212A3957630076253A /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AAB9202A3957630076253A /* ItemModel.swift */; };
+		A6AAB9232A3959A10076253A /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AAB9222A3959A10076253A /* EditViewController.swift */; };
+		A6AAB9252A3963760076253A /* EditAddCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AAB9242A3963750076253A /* EditAddCell.swift */; };
+		A6AAB9272A3967B90076253A /* EditHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AAB9262A3967B90076253A /* EditHeaderView.swift */; };
+		A6AAB9292A3984AF0076253A /* EditReduceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AAB9282A3984AF0076253A /* EditReduceCell.swift */; };
+		A6C9FC582A3C37A30062A403 /* SectionDecorationLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C9FC542A3C37A30062A403 /* SectionDecorationLayoutAttributes.swift */; };
+		A6C9FC592A3C37A30062A403 /* SectionDecorationReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C9FC552A3C37A30062A403 /* SectionDecorationReusableView.swift */; };
+		A6C9FC5A2A3C37A30062A403 /* SectionDecorationFlowLayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C9FC562A3C37A30062A403 /* SectionDecorationFlowLayoutDelegate.swift */; };
+		A6C9FC5B2A3C37A30062A403 /* SectionDecorationFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C9FC572A3C37A30062A403 /* SectionDecorationFlowLayout.swift */; };
+		A6CD50DC2A3C5E8A00A0441B /* AnimationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CD50DB2A3C5E8A00A0441B /* AnimationItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6AAB8FD2A3945DA0076253A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6AAB8DE2A3945D90076253A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6AAB8E52A3945D90076253A;
+			remoteInfo = RCDragDropAnimation;
+		};
+		A6AAB9072A3945DA0076253A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6AAB8DE2A3945D90076253A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6AAB8E52A3945D90076253A;
+			remoteInfo = RCDragDropAnimation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0171BEA9E0A94B8FE1898AE8 /* Pods-RCDragDropAnimation-RCDragDropAnimationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCDragDropAnimation-RCDragDropAnimationUITests.debug.xcconfig"; path = "Target Support Files/Pods-RCDragDropAnimation-RCDragDropAnimationUITests/Pods-RCDragDropAnimation-RCDragDropAnimationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		06808114B36B66CC80564119 /* Pods_RCDragDropAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RCDragDropAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25E63533934DC842389AB310 /* Pods-RCDragDropAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCDragDropAnimation.debug.xcconfig"; path = "Target Support Files/Pods-RCDragDropAnimation/Pods-RCDragDropAnimation.debug.xcconfig"; sourceTree = "<group>"; };
+		27638EC1BFA9A0CE1EF1B12E /* Pods-RCDragDropAnimation-RCDragDropAnimationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCDragDropAnimation-RCDragDropAnimationUITests.release.xcconfig"; path = "Target Support Files/Pods-RCDragDropAnimation-RCDragDropAnimationUITests/Pods-RCDragDropAnimation-RCDragDropAnimationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		31AF74F043A82CA7102C9FEB /* Pods-RCDragDropAnimationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCDragDropAnimationTests.debug.xcconfig"; path = "Target Support Files/Pods-RCDragDropAnimationTests/Pods-RCDragDropAnimationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7F5BAB233390E6B4BCB3AE90 /* Pods_RCDragDropAnimationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RCDragDropAnimationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6AAB8E62A3945D90076253A /* RCDragDropAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RCDragDropAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6AAB8E92A3945D90076253A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A6AAB8ED2A3945D90076253A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A6AAB8F02A3945D90076253A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6AAB8F22A3945DA0076253A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6AAB8F52A3945DA0076253A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6AAB8F72A3945DA0076253A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6AAB8FC2A3945DA0076253A /* RCDragDropAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RCDragDropAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6AAB9002A3945DA0076253A /* RCDragDropAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCDragDropAnimationTests.swift; sourceTree = "<group>"; };
+		A6AAB9062A3945DA0076253A /* RCDragDropAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RCDragDropAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6AAB90A2A3945DA0076253A /* RCDragDropAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCDragDropAnimationUITests.swift; sourceTree = "<group>"; };
+		A6AAB90C2A3945DA0076253A /* RCDragDropAnimationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCDragDropAnimationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A6AAB9202A3957630076253A /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		A6AAB9222A3959A10076253A /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		A6AAB9242A3963750076253A /* EditAddCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAddCell.swift; sourceTree = "<group>"; };
+		A6AAB9262A3967B90076253A /* EditHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditHeaderView.swift; sourceTree = "<group>"; };
+		A6AAB9282A3984AF0076253A /* EditReduceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditReduceCell.swift; sourceTree = "<group>"; };
+		A6C9FC542A3C37A30062A403 /* SectionDecorationLayoutAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionDecorationLayoutAttributes.swift; sourceTree = "<group>"; };
+		A6C9FC552A3C37A30062A403 /* SectionDecorationReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionDecorationReusableView.swift; sourceTree = "<group>"; };
+		A6C9FC562A3C37A30062A403 /* SectionDecorationFlowLayoutDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionDecorationFlowLayoutDelegate.swift; sourceTree = "<group>"; };
+		A6C9FC572A3C37A30062A403 /* SectionDecorationFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionDecorationFlowLayout.swift; sourceTree = "<group>"; };
+		A6CD50DB2A3C5E8A00A0441B /* AnimationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationItem.swift; sourceTree = "<group>"; };
+		AA22E4BE98A6C07D212BDDC1 /* Pods-RCDragDropAnimationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCDragDropAnimationTests.release.xcconfig"; path = "Target Support Files/Pods-RCDragDropAnimationTests/Pods-RCDragDropAnimationTests.release.xcconfig"; sourceTree = "<group>"; };
+		BD93E4D5269B23E1A4576639 /* Pods_RCDragDropAnimation_RCDragDropAnimationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RCDragDropAnimation_RCDragDropAnimationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB80A7F4089078074AC7B040 /* Pods-RCDragDropAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCDragDropAnimation.release.xcconfig"; path = "Target Support Files/Pods-RCDragDropAnimation/Pods-RCDragDropAnimation.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6AAB8E32A3945D90076253A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				878554515C2BE22E6FDE2425 /* Pods_RCDragDropAnimation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6AAB8F92A3945DA0076253A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83C51058B0FA45DFAFE6EE2B /* Pods_RCDragDropAnimationTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6AAB9032A3945DA0076253A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B4DF20BFCABF45BDDE7D68A /* Pods_RCDragDropAnimation_RCDragDropAnimationUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98FF91DD2325CEE0519C91DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25E63533934DC842389AB310 /* Pods-RCDragDropAnimation.debug.xcconfig */,
+				CB80A7F4089078074AC7B040 /* Pods-RCDragDropAnimation.release.xcconfig */,
+				0171BEA9E0A94B8FE1898AE8 /* Pods-RCDragDropAnimation-RCDragDropAnimationUITests.debug.xcconfig */,
+				27638EC1BFA9A0CE1EF1B12E /* Pods-RCDragDropAnimation-RCDragDropAnimationUITests.release.xcconfig */,
+				31AF74F043A82CA7102C9FEB /* Pods-RCDragDropAnimationTests.debug.xcconfig */,
+				AA22E4BE98A6C07D212BDDC1 /* Pods-RCDragDropAnimationTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A6AAB8DD2A3945D90076253A = {
+			isa = PBXGroup;
+			children = (
+				A6AAB8E82A3945D90076253A /* RCDragDropAnimation */,
+				A6AAB8FF2A3945DA0076253A /* RCDragDropAnimationTests */,
+				A6AAB9092A3945DA0076253A /* RCDragDropAnimationUITests */,
+				A6AAB8E72A3945D90076253A /* Products */,
+				98FF91DD2325CEE0519C91DC /* Pods */,
+				D598AA9D4DAB9E58FA4AA4B3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A6AAB8E72A3945D90076253A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6AAB8E62A3945D90076253A /* RCDragDropAnimation.app */,
+				A6AAB8FC2A3945DA0076253A /* RCDragDropAnimationTests.xctest */,
+				A6AAB9062A3945DA0076253A /* RCDragDropAnimationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6AAB8E82A3945D90076253A /* RCDragDropAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				A6C9FC532A3C37880062A403 /* CustomFlowLayout */,
+				A6AAB91B2A3956FD0076253A /* Model */,
+				A6AAB91C2A3957070076253A /* View */,
+				A6AAB91D2A39570D0076253A /* Controller */,
+				A6AAB8E92A3945D90076253A /* AppDelegate.swift */,
+				A6AAB8ED2A3945D90076253A /* ViewController.swift */,
+				A6AAB8EF2A3945D90076253A /* Main.storyboard */,
+				A6AAB8F22A3945DA0076253A /* Assets.xcassets */,
+				A6AAB8F42A3945DA0076253A /* LaunchScreen.storyboard */,
+				A6AAB8F72A3945DA0076253A /* Info.plist */,
+			);
+			path = RCDragDropAnimation;
+			sourceTree = "<group>";
+		};
+		A6AAB8FF2A3945DA0076253A /* RCDragDropAnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				A6AAB9002A3945DA0076253A /* RCDragDropAnimationTests.swift */,
+			);
+			path = RCDragDropAnimationTests;
+			sourceTree = "<group>";
+		};
+		A6AAB9092A3945DA0076253A /* RCDragDropAnimationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A6AAB90A2A3945DA0076253A /* RCDragDropAnimationUITests.swift */,
+				A6AAB90C2A3945DA0076253A /* RCDragDropAnimationUITestsLaunchTests.swift */,
+			);
+			path = RCDragDropAnimationUITests;
+			sourceTree = "<group>";
+		};
+		A6AAB91B2A3956FD0076253A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A6AAB9202A3957630076253A /* ItemModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6AAB91C2A3957070076253A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6CD50DA2A3C5E3F00A0441B /* AnimationItem */,
+				A6AAB92E2A3999E00076253A /* Header */,
+				A6AAB92D2A3999D30076253A /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A6AAB91D2A39570D0076253A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A6AAB9222A3959A10076253A /* EditViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A6AAB92D2A3999D30076253A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A6AAB9242A3963750076253A /* EditAddCell.swift */,
+				A6AAB9282A3984AF0076253A /* EditReduceCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A6AAB92E2A3999E00076253A /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				A6AAB9262A3967B90076253A /* EditHeaderView.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		A6C9FC532A3C37880062A403 /* CustomFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				A6C9FC572A3C37A30062A403 /* SectionDecorationFlowLayout.swift */,
+				A6C9FC562A3C37A30062A403 /* SectionDecorationFlowLayoutDelegate.swift */,
+				A6C9FC542A3C37A30062A403 /* SectionDecorationLayoutAttributes.swift */,
+				A6C9FC552A3C37A30062A403 /* SectionDecorationReusableView.swift */,
+			);
+			path = CustomFlowLayout;
+			sourceTree = "<group>";
+		};
+		A6CD50DA2A3C5E3F00A0441B /* AnimationItem */ = {
+			isa = PBXGroup;
+			children = (
+				A6CD50DB2A3C5E8A00A0441B /* AnimationItem.swift */,
+			);
+			path = AnimationItem;
+			sourceTree = "<group>";
+		};
+		D598AA9D4DAB9E58FA4AA4B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06808114B36B66CC80564119 /* Pods_RCDragDropAnimation.framework */,
+				BD93E4D5269B23E1A4576639 /* Pods_RCDragDropAnimation_RCDragDropAnimationUITests.framework */,
+				7F5BAB233390E6B4BCB3AE90 /* Pods_RCDragDropAnimationTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6AAB8E52A3945D90076253A /* RCDragDropAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6AAB9102A3945DA0076253A /* Build configuration list for PBXNativeTarget "RCDragDropAnimation" */;
+			buildPhases = (
+				47A3EA98CBD917AC10270104 /* [CP] Check Pods Manifest.lock */,
+				A6AAB8E22A3945D90076253A /* Sources */,
+				A6AAB8E32A3945D90076253A /* Frameworks */,
+				A6AAB8E42A3945D90076253A /* Resources */,
+				5B93155C8A24348C74E9C08D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RCDragDropAnimation;
+			productName = RCDragDropAnimation;
+			productReference = A6AAB8E62A3945D90076253A /* RCDragDropAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6AAB8FB2A3945DA0076253A /* RCDragDropAnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6AAB9132A3945DA0076253A /* Build configuration list for PBXNativeTarget "RCDragDropAnimationTests" */;
+			buildPhases = (
+				E0FAA2C03F2BC234A9A11EB8 /* [CP] Check Pods Manifest.lock */,
+				A6AAB8F82A3945DA0076253A /* Sources */,
+				A6AAB8F92A3945DA0076253A /* Frameworks */,
+				A6AAB8FA2A3945DA0076253A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6AAB8FE2A3945DA0076253A /* PBXTargetDependency */,
+			);
+			name = RCDragDropAnimationTests;
+			productName = RCDragDropAnimationTests;
+			productReference = A6AAB8FC2A3945DA0076253A /* RCDragDropAnimationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A6AAB9052A3945DA0076253A /* RCDragDropAnimationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6AAB9162A3945DA0076253A /* Build configuration list for PBXNativeTarget "RCDragDropAnimationUITests" */;
+			buildPhases = (
+				9AB19706CCE4BE47E24FEE23 /* [CP] Check Pods Manifest.lock */,
+				A6AAB9022A3945DA0076253A /* Sources */,
+				A6AAB9032A3945DA0076253A /* Frameworks */,
+				A6AAB9042A3945DA0076253A /* Resources */,
+				9BE007929B02AFFAE9BA5056 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6AAB9082A3945DA0076253A /* PBXTargetDependency */,
+			);
+			name = RCDragDropAnimationUITests;
+			productName = RCDragDropAnimationUITests;
+			productReference = A6AAB9062A3945DA0076253A /* RCDragDropAnimationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6AAB8DE2A3945D90076253A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					A6AAB8E52A3945D90076253A = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					A6AAB8FB2A3945DA0076253A = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = A6AAB8E52A3945D90076253A;
+					};
+					A6AAB9052A3945DA0076253A = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = A6AAB8E52A3945D90076253A;
+					};
+				};
+			};
+			buildConfigurationList = A6AAB8E12A3945D90076253A /* Build configuration list for PBXProject "RCDragDropAnimation" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6AAB8DD2A3945D90076253A;
+			productRefGroup = A6AAB8E72A3945D90076253A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6AAB8E52A3945D90076253A /* RCDragDropAnimation */,
+				A6AAB8FB2A3945DA0076253A /* RCDragDropAnimationTests */,
+				A6AAB9052A3945DA0076253A /* RCDragDropAnimationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6AAB8E42A3945D90076253A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6AAB8F62A3945DA0076253A /* LaunchScreen.storyboard in Resources */,
+				A6AAB8F32A3945DA0076253A /* Assets.xcassets in Resources */,
+				A6AAB8F12A3945D90076253A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6AAB8FA2A3945DA0076253A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6AAB9042A3945DA0076253A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47A3EA98CBD917AC10270104 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RCDragDropAnimation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B93155C8A24348C74E9C08D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RCDragDropAnimation/Pods-RCDragDropAnimation-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RCDragDropAnimation/Pods-RCDragDropAnimation-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RCDragDropAnimation/Pods-RCDragDropAnimation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AB19706CCE4BE47E24FEE23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RCDragDropAnimation-RCDragDropAnimationUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BE007929B02AFFAE9BA5056 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RCDragDropAnimation-RCDragDropAnimationUITests/Pods-RCDragDropAnimation-RCDragDropAnimationUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RCDragDropAnimation-RCDragDropAnimationUITests/Pods-RCDragDropAnimation-RCDragDropAnimationUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RCDragDropAnimation-RCDragDropAnimationUITests/Pods-RCDragDropAnimation-RCDragDropAnimationUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0FAA2C03F2BC234A9A11EB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RCDragDropAnimationTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6AAB8E22A3945D90076253A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6AAB9232A3959A10076253A /* EditViewController.swift in Sources */,
+				A6CD50DC2A3C5E8A00A0441B /* AnimationItem.swift in Sources */,
+				A6C9FC5B2A3C37A30062A403 /* SectionDecorationFlowLayout.swift in Sources */,
+				A6AAB9292A3984AF0076253A /* EditReduceCell.swift in Sources */,
+				A6AAB9212A3957630076253A /* ItemModel.swift in Sources */,
+				A6C9FC582A3C37A30062A403 /* SectionDecorationLayoutAttributes.swift in Sources */,
+				A6AAB8EE2A3945D90076253A /* ViewController.swift in Sources */,
+				A6C9FC5A2A3C37A30062A403 /* SectionDecorationFlowLayoutDelegate.swift in Sources */,
+				A6AAB8EA2A3945D90076253A /* AppDelegate.swift in Sources */,
+				A6AAB9252A3963760076253A /* EditAddCell.swift in Sources */,
+				A6AAB9272A3967B90076253A /* EditHeaderView.swift in Sources */,
+				A6C9FC592A3C37A30062A403 /* SectionDecorationReusableView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6AAB8F82A3945DA0076253A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6AAB9012A3945DA0076253A /* RCDragDropAnimationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6AAB9022A3945DA0076253A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6AAB90B2A3945DA0076253A /* RCDragDropAnimationUITests.swift in Sources */,
+				A6AAB90D2A3945DA0076253A /* RCDragDropAnimationUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6AAB8FE2A3945DA0076253A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6AAB8E52A3945D90076253A /* RCDragDropAnimation */;
+			targetProxy = A6AAB8FD2A3945DA0076253A /* PBXContainerItemProxy */;
+		};
+		A6AAB9082A3945DA0076253A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6AAB8E52A3945D90076253A /* RCDragDropAnimation */;
+			targetProxy = A6AAB9072A3945DA0076253A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A6AAB8EF2A3945D90076253A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6AAB8F02A3945D90076253A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A6AAB8F42A3945DA0076253A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6AAB8F52A3945DA0076253A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6AAB90E2A3945DA0076253A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A6AAB90F2A3945DA0076253A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6AAB9112A3945DA0076253A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25E63533934DC842389AB310 /* Pods-RCDragDropAnimation.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A6TGECP5WV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RCDragDropAnimation/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rongcheng.RCDragDropAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6AAB9122A3945DA0076253A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB80A7F4089078074AC7B040 /* Pods-RCDragDropAnimation.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A6TGECP5WV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RCDragDropAnimation/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rongcheng.RCDragDropAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A6AAB9142A3945DA0076253A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31AF74F043A82CA7102C9FEB /* Pods-RCDragDropAnimationTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A6TGECP5WV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rongcheng.RCDragDropAnimationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RCDragDropAnimation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RCDragDropAnimation";
+			};
+			name = Debug;
+		};
+		A6AAB9152A3945DA0076253A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA22E4BE98A6C07D212BDDC1 /* Pods-RCDragDropAnimationTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A6TGECP5WV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rongcheng.RCDragDropAnimationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RCDragDropAnimation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RCDragDropAnimation";
+			};
+			name = Release;
+		};
+		A6AAB9172A3945DA0076253A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0171BEA9E0A94B8FE1898AE8 /* Pods-RCDragDropAnimation-RCDragDropAnimationUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A6TGECP5WV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rongcheng.RCDragDropAnimationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RCDragDropAnimation;
+			};
+			name = Debug;
+		};
+		A6AAB9182A3945DA0076253A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27638EC1BFA9A0CE1EF1B12E /* Pods-RCDragDropAnimation-RCDragDropAnimationUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A6TGECP5WV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rongcheng.RCDragDropAnimationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RCDragDropAnimation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6AAB8E12A3945D90076253A /* Build configuration list for PBXProject "RCDragDropAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6AAB90E2A3945DA0076253A /* Debug */,
+				A6AAB90F2A3945DA0076253A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6AAB9102A3945DA0076253A /* Build configuration list for PBXNativeTarget "RCDragDropAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6AAB9112A3945DA0076253A /* Debug */,
+				A6AAB9122A3945DA0076253A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6AAB9132A3945DA0076253A /* Build configuration list for PBXNativeTarget "RCDragDropAnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6AAB9142A3945DA0076253A /* Debug */,
+				A6AAB9152A3945DA0076253A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6AAB9162A3945DA0076253A /* Build configuration list for PBXNativeTarget "RCDragDropAnimationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6AAB9172A3945DA0076253A /* Debug */,
+				A6AAB9182A3945DA0076253A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6AAB8DE2A3945D90076253A /* Project object */;
+}

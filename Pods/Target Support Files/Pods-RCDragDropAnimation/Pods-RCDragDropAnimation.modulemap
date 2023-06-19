@@ -1,0 +1,6 @@
+framework module Pods_RCDragDropAnimation {
+  umbrella header "Pods-RCDragDropAnimation-umbrella.h"
+
+  export *
+  module * { export * }
+}
