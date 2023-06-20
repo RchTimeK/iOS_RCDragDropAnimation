@@ -47,6 +47,8 @@ private extension EditViewController {
         collectionView.dragDelegate = self
         collectionView.dropDelegate = self
         collectionView.dragInteractionEnabled = true
+        collectionView.reorderingCadence = .immediate
+        collectionView.isSpringLoaded = true
         collectionView.register(EditAddCell.self, forCellWithReuseIdentifier: EditAddCellID)
         collectionView.register(EditReduceCell.self, forCellWithReuseIdentifier: EditReduceCellID)
         collectionView.register(EditHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: EditHeaderID)
@@ -182,15 +184,29 @@ extension EditViewController: UICollectionViewDropDelegate,UICollectionViewDragD
      */
     
     func collectionView(_ collectionView: UICollectionView, dragSessionWillBegin session: UIDragSession) {
-        // 拖拽开始的时机，需要的自行处理
+        // 拖拽开始，可自行处理
     }
     func collectionView(_ collectionView: UICollectionView, dragSessionDidEnd session: UIDragSession) {
-        // 拖拽结束的时机，需要的自行处理
+        // 拖拽结束，可自行处理
+    }
+    // 除去拖拽时候的阴影
+    func collectionView(_ collectionView: UICollectionView, dragPreviewParametersForItemAt indexPath: IndexPath) -> UIDragPreviewParameters? {
+        guard let cell = collectionView.cellForItem(at: indexPath) else {
+            return nil
+        }
+        let previewParameters = UIDragPreviewParameters()
+        previewParameters.visiblePath = UIBezierPath(rect: cell.bounds)
+        previewParameters.backgroundColor = .white
+        if #available(iOS 14.0, *) {
+            previewParameters.shadowPath = UIBezierPath(rect: .zero)
+        }
+        return previewParameters
     }
     // 是否能放置
     func collectionView(_ collectionView: UICollectionView, canHandle session: UIDropSession) -> Bool {
         return true
     }
+    
     // 处理拖动中放置的策略
     // 四种分别：move移动；copy拷贝；forbidden禁止，即不能放置；cancel用户取消。
     // 效果一般使用2种：.insertAtDestinationIndexPath 挤压移动；.insertIntoDestinationIndexPath 取代。
@@ -248,26 +264,27 @@ extension EditViewController: UICollectionViewDropDelegate,UICollectionViewDragD
         }
     }
     
-    // 拖拽结束最好刷新一下
+    // 当dropSession 完成时会被调用，不管结果如何。一般进行清理或刷新操作
     func collectionView(_ collectionView: UICollectionView, dropSessionDidEnd session: UIDropSession) {
-        collectionView.reloadData()
+        let animationsEnabled = UIView.areAnimationsEnabled
+        UIView.setAnimationsEnabled(false)
+        collectionView.reloadSections(IndexSet(integer: 0))
+        UIView.setAnimationsEnabled(animationsEnabled)
     }
     
-    // 除去拖拽时候的阴影
-    func collectionView(_ collectionView: UICollectionView, dragPreviewParametersForItemAt indexPath: IndexPath) -> UIDragPreviewParameters? {
-        guard let cell = collectionView.cellForItem(at: indexPath) else {
-            return nil
-        }
-        let previewParameters = UIDragPreviewParameters()
-        previewParameters.visiblePath = UIBezierPath(rect: cell.bounds)
-        previewParameters.backgroundColor = .white
-        if #available(iOS 14.0, *) {
-            previewParameters.shadowPath = UIBezierPath(rect: .zero)
-        }
-        return previewParameters
+    // 当drop会话进入到 collectionView 的坐标区域内就会调用
+    func collectionView(_ collectionView: UICollectionView, dropSessionDidEnter session: UIDropSession) {
     }
     
+    // 当 dropSession 不在collectionView 目标区域的时候会被调用
+    func collectionView(_ collectionView: UICollectionView, dropSessionDidExit session: UIDropSession) {
 
+    }
+   
+    // 同属性 isSpringLoaded
+    func collectionView(_ collectionView: UICollectionView, shouldSpringLoadItemAt indexPath: IndexPath, with context: UISpringLoadedInteractionContext) -> Bool {
+        true
+    }
 }
 
 extension EditViewController {
